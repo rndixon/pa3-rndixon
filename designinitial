@@ -1,0 +1,71 @@
+Richard Dixon
+Calculating various sport statistics
+Programming Assignment 3
+
+sport = Input("Enter the sport that you want statistics on")
+Output: print(sport)
+
+#Create a function to calculate American Football
+def football_1(attempts):
+    attempts = int(attempts)
+    QB_rating = (100 * ((5*(attempts) - .3) + .25*((attempts) - 3) + 20 *(attempts) + 2.375 - (25 * (attempts))) / 6)
+    QB_rating = float(QB_rating)
+    if QB_rating == 158.3:
+        return print("perfect passer")
+    else:
+        return print("not a perfect passer")
+
+#Create a function to calculate Quidditch
+def quidditch_1(goals, snitches):
+    goals = int(goals)
+    snitches = int(snitches)
+    total_score = 10 * (goals) + 30 * (snitches)
+    return print("Your team scored",total_score,"points")
+
+#Create a function to caculate max
+def biggest(execution_1,execution_2,execution_3,execution_4,execution_5):
+    max = execution_1
+    if execution_2 > max:
+        max = execution_2
+    if execution_3 > max:
+        max = execution_3
+    if execution_4 >max:
+        max = execution_4
+    if execution_5 > max:
+        max = execution_5
+    return print(max)
+biggest(5,6,8,9,7)
+
+#Create a function to caculate min
+def smallest(execution_1,execution_2,execution_3,execution_4,execution_5):
+    min = execution_1
+    if execution_2 < min:
+        min = execution_2
+    if execution_3 < min:
+        min = execution_3
+    if execution_4 < min:
+        min = execution_4
+    if execution_5 < min:
+        min = execution_5
+    return print(min)
+
+#Create a function to calculate gymnast score
+def gymnast_1(difficulty_score,execution_1,execution_2,execution_3,execution_4,execution_5):
+    x = biggest(execution_1,execution_2,execution_3,execution_4,execution_5):
+    y = smallest(execution_1,execution_2,execution_3,execution_4,execution_5):
+    final_calculation = ((execution_1 + execution_2 + execution_3 + execution_4 + execution_5 - x - y) / 5) + difficulty_score
+    return print("Your final score is," final_calculation,"points")
+
+# Design a main function
+def main():
+    name = name.lower,name.upper
+    #American football statistics
+    if name == "football"
+        football_1
+    elif name == "quidditch"
+        quidditch_1
+    elif name == "gymnast"
+        gymnast_1
+    else:
+       not a valid name
+
